@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Monitoring Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>☁ Cloud Monitoring Dashboard</h1>
+  <p>Serverless AWS Application</p>
+</header>
+
+<main>
+  <section class="cards">
+    <div class="card"><h3>EC2 Status</h3><p class="status">● Running</p><span>Instance: i-123456789</span></div>
+    <div class="card"><h3>CPU Usage</h3><p class="value">32%</p><span>Normal</span></div>
+    <div class="card"><h3>API Status</h3><p class="status">● Healthy</p><span>API Gateway</span></div>
+    <div class="card"><h3>Database</h3><p class="status">● Connected</p><span>DynamoDB</span></div>
+  </section>
+
+  <section class="activity">
+    <h2>System Activity</h2>
+    <div class="activity-item"><span>10:20 AM</span><p>EC2 monitoring check completed</p></div>
+    <div class="activity-item"><span>10:15 AM</span><p>API Gateway request received</p></div>
+    <div class="activity-item"><span>10:05 AM</span><p>Database connection verified</p></div>
+  </section>
+
+  <button onclick="checkStatus()">Check System Status</button>
+  <p id="message"></p>
+</main>
+
+<footer><p>Powered by AWS Serverless Architecture</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
